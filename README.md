@@ -1,5 +1,5 @@
 # AchtsamSprechen – HTML Export
-## Basierend auf dem Lovable React-Projekt (mindful-speak-coach)
+## Basierend auf dem Projekt (mindful-speak-coach)
 
 ---
 
