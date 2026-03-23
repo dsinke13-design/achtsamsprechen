@@ -85,6 +85,4 @@ Suche und ersetze in allen HTML-Dateien:
 - `info@achtsamSprechen.de` → deine E-Mail
 - `+49 (0) 123 456 789` → deine Telefonnummer
 
----
 
-Erstellt mit Claude (Anthropic) · Design basierend auf Lovable-Projekt mindful-speak-coach
