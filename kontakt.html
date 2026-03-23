@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kostenloses Erstgespräch – jetzt Kontakt aufnehmen.">
+  <title>Kontakt – AchtsamSprechen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Achtsam<span>Sprechen</span></a>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="programme.html">Programme</a>
+      <a href="methode.html">Methode</a>
+      <a href="seminare.html">Seminare</a>
+      <a href="blog.html">Impulse</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+      <a href="kontakt.html" class="nav-cta">Erstgespräch</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="index.html">Start</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="programme.html">Programme</a>
+    <a href="methode.html">Methode</a>
+    <a href="seminare.html">Seminare</a>
+    <a href="blog.html">Impulse</a>
+    <a href="kontakt.html" class="active">Kontakt</a>
+    <a href="kontakt.html" class="nav-cta-mobile">Kostenloses Erstgespräch</a>
+  </div>
+</nav>
+
+<section class="section page-header">
+  <div class="max-w-5xl">
+    <div class="grid-2">
+      <!-- Left: Info -->
+      <div class="reveal">
+        <span class="label">Kontakt</span>
+        <h1 style="font-size:clamp(2rem,4vw,3rem);">Kostenloses Erstgespräch</h1>
+        <p class="text-lg muted-text leading-relaxed mt-6">
+          Sie möchten bewusster kommunizieren? Lassen Sie uns in einem unverbindlichen Gespräch herausfinden,
+          wie ich Sie unterstützen kann.
+        </p>
+
+        <div class="mt-10">
+          <h3 class="mb-4">Was Sie erwartet</h3>
+          <ul class="dot-list">
+            <li><span class="dot"></span>30 Minuten persönliches Gespräch</li>
+            <li><span class="dot"></span>Analyse Ihrer aktuellen Kommunikation</li>
+            <li><span class="dot"></span>Erste Impulse und Empfehlungen</li>
+            <li><span class="dot"></span>Unverbindlich und kostenfrei</li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h3>Direkt erreichbar</h3>
+          <p class="muted-text">📧 info@achtsamSprechen.de</p>
+          <p class="muted-text" style="margin-top:0.4rem;">📞 +49 (0) 123 456 789</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal delay-2">
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" required maxlength="100" placeholder="Ihr vollständiger Name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">E-Mail</label>
+            <input class="form-input" type="email" id="email" name="email" required maxlength="255" placeholder="ihre@email.de">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Telefon <span style="color:var(--muted); font-weight:400;">(optional)</span></label>
+            <input class="form-input" type="tel" id="phone" name="phone" maxlength="30" placeholder="+49 ...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Ihre Nachricht</label>
+            <textarea class="form-input" id="message" name="message" rows="4" required maxlength="1000" placeholder="Worum geht es Ihnen? Was möchten Sie erreichen?"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="btnText">Nachricht senden</span>
+            <span>✉</span>
+          </button>
+          <div id="successMsg" style="display:none; margin-top:1rem; padding:1rem; background:hsl(145,20%,92%); border-radius:2px; color:var(--primary); font-size:0.9rem;">
+            ✓ Vielen Dank! Ich melde mich innerhalb von 48 Stunden bei Ihnen.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Achtsam<span>Sprechen</span></div>
+      <p class="footer-desc">Bewusst kommunizieren. Authentisch wirken. Menschen erreichen.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <div class="footer-links">
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="programme.html">Programme</a>
+        <a href="methode.html">Methode</a>
+        <a href="seminare.html">Seminare</a>
+        <a href="blog.html">Impulse</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Kontakt</div>
+      <div class="footer-contact">
+        <p>info@achtsamSprechen.de</p>
+        <p>+49 (0) 123 456 789</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar">
+    © 2025 AchtsamSprechen. Alle Rechte vorbehalten. &nbsp;·&nbsp;
+    <a href="#" style="color:inherit;">Impressum</a> &nbsp;·&nbsp;
+    <a href="#" style="color:inherit;">Datenschutz</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
